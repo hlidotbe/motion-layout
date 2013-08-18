@@ -58,8 +58,8 @@ module Motion
 
     def strain
       @subviews.values.each do |subview|
-        next if @view == subview # you wouldn't believe the mess it would create
         subview.translatesAutoresizingMaskIntoConstraints = false
+        next if @view == subview # you wouldn't believe the mess it would create
         @view.addSubview(subview)
       end
 
